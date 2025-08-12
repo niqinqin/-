@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<link rel="icon" href="logo.ico" type="image/x-icon">  
+ <link rel="shortcut icon" href="logo.ico" type="image/x-icon">  
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<title>杭州鼎风建筑有限公司</title>
+    <meta name="keywords" content="上海网站建设,上海网站制作,上海网站设计,上海网站开发,网站建设,网站设计,网站制作,网站建设公司,上海网站建设公司,网站设计公司,上海网站设计公司">
+    <meta name="description" content="网建科技是一家专业的网站建设公司，我们专注高端、营销、企业官网、响应式网站建设、SEO优化、托管以及年度运维等为企业客户提供一站式网站解决方案，能带给客户最新的互联网理念。从网站结构的规划UI设计到用户体验提高，我们力求做到极致完美。">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-1.10.1.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.js"></script>
+    <script>
+    $(function(){
+        var $mlNav = $('.navbox');
+        $('#hmpage').fullpage({
+            verticalCentered:true,
+            resize:false,
+            anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'foot'],
+            menu: '#navPage',
+            scrollOverflow: false,
+            afterLoad: function(anchorLink, index){
+                $("#fp-nav ul li").eq(index-1).addClass("active");
+                if(index != 1){
+                    $('header').addClass("active");
+                }
+				if(index == 2){$('.counter').countUp({time:1000});}
+                if(index == 8){
+                    $('.mbox8Bg').addClass("cut");
+                }
+                if(index ==9){
+                    $("#navPage").addClass("noactive");
+                }
+            },
+            onLeave: function(index, nextIndex, direction){
+                if(index != 1){
+                    $('header').removeClass("active");
+                }
+                if(index == 8 && direction == 'up'){
+                    $('.mbox8Bg').removeClass("cut");
+                }
+                if(index ==9){
+                    $("#navPage").removeClass("noactive");
+                }
+            }
+        });
+		setTimeout(function(){$("#hmpage").css("opacity",1);},10);     
+    });
+    </script>
+	<!--[if IE]>
+        <script type="text/javascript" src="js/html5shiv.min.js"></script>
+        <script type="text/javascript" src="js/respond.min.js"></script>
+    <![endif]-->
+    <style>html{ overflow:hidden;}</style>
+<!-- netconst.com Baidu tongji analytics -->
+
+</head>
+
+<body>
+
+<div class="menuBg">
+	<div class="menuBtn">
+    	<img src="images/Menu.png">
+        <div class="mBtnLine">
+        	<span></span>
+        	<span></span>
+        	<span></span>
+        </div>
+    </div>
+    <ul class="mOnLine list-unstyled text-center hidden-xs hidden-sm">
+    	<li class="onLineQQ">
+        	<div class="mOnLineIco"><i class="fa fa-qq"></i></div>
+            <div class="mOnLineCon">
+            	<a href="tencent://message/?uin=1581432563" target="_blank" rel="nofollow">在线联系</a>
+            </div>
+        </li>
+    	<li class="onLineTel">
+        	<div class="mOnLineIco"><i class="fa fa-phone"></i></div>
+            <div class="mOnLineCon">
+            	<a href="tel:135 8671 1160">153 2575 2372</a>
+            </div>
+        </li>
+    	<li class="onLineWx">
+        	<div class="mOnLineIco"><i class="fa fa-weixin"></i></div>
+            <div class="mOnLineCon">
+            	<img src="images/wechat.jpg" class="img-responsive">
+            </div>
+        </li>
+    </ul>
+</div>
+<header class="headerBg">
+	<div class="header">
+    	<div class="logo"><a href="index.html"><img src="images/logo1.png" class="img-responsive shows"><img src="images/logo2.png" class="img-responsive hides"></a></div>
+        <div class="tel"><a class="hides" href="tel:135 8671 1160"><div class="telIco"></div></a><span><div class="telIco"></div> 135 8671 1160</span></div>
+        <div class="clear"></div>
+    </div>
+</header>
+<div class="navBg">
+	<div class="navTop">
+    	<div class="logo"><a href="index.html"><img src="images/logo1.png" class="img-responsive"></a></div>
+        <div class="navClose"><span></span><span></span></div>
+        <div class="clear"></div>
+    </div>
+    <div class="navBot">
+    	<ul class="navList list-unstyled">
+        	<li><a href="index.html#page1"> <span class="navEn">Home</span><span class="navCn">首页</span></a></li>
+            	 
+                				<li><a href="index.html#page2"><span class="navEn">About</span><span class="navCn">我们</span></a></li>
+                    			<li><a href="index.html#page3"><span class="navEn">Service</span><span class="navCn">服务</span></a></li>
+                    			<li><a href="index.html#page4"><span class="navEn">Products</span><span class="navCn">产品</span></a></li>
+                    			<li><a href="index.html#page5"><span class="navEn">Customer</span><span class="navCn">客户</span></a></li>
+                    			<li><a href="index.html#page7"><span class="navEn">News</span><span class="navCn">新闻</span></a></li>
+                    			<li><a href="index.html#page8"><span class="navEn">Contact</span><span class="navCn">联系</span></a></li>
+                            		 
+        	<li class="text-right">
+            	<p>全国服务热线</p>
+                <p class="navTel">TEL:153 2575 2372</p>
+            </li>
+        </ul>
+        <div class="navBotCon text-right">
+
+            
+            </div>
+            <div class="clear"></div>
+        	<p>中国 · 浙江 · 杭州</p>
+            <p>杭州鼎峰建筑有限公司</p>
+            <p>构若金汤</p>
+            <ul class="navShare list-unstyled list-inline">
+            	<li><a href="#"><i class="fa fa-qq"></i></a></li>
+            	<li><a href="javascript:;"><i class="fa fa-weixin"></i></a>
+                	<div class="navWechat"><img src="images/wechat.jpg" class="img-responsive"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/search_common.js"></script>
+<div id="hmpage">
+    <div class="section">   
+    	<div class="mbox mbox1">
+        	<div class="swiper-container">
+            	<div class="swiper-wrapper">
+                	<div class="swiper-slide">
+                    	<div class="banBg3"></div>
+                        <div class="ban3Ico ban3Ico1"></div>
+                        <div class="ban3Ico ban3Ico2"></div>
+                        <div class="ban3Ico ban3Ico3"></div>
+                        <div class="banText3">
+                        	<div class="banTextCn3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.3s"><img src="images/banTextCn3.png" class="hidden-xs img-responsive"><img src="images/banTextCn3m.png" class="visible-xs img-responsive"></div>
+<!--                        	<div class="banTextEn3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0.8s"><img src="images/banTextEn3.png" class="hidden-xs img-responsive"><img src="images/banTextEn3m.png" class="visible-xs img-responsive"></div>-->
+                            <div class="banImg3">
+                                <div class="banImg31 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="3.8s"><img src="images/banDev1.png" class="img-responsive"></div>
+                                <div class="banImg32 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="2.8s"><img src="images/banDev2.png" class="img-responsive"></div>
+                                <div class="banImg33 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="2.8s"><img src="images/banDev3.png" class="hidden-xs img-responsive"><img src="images/banDev3m.png" class="visible-xs img-responsive"></div>
+                                <div class="banImg34 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.8s"><img src="images/banDev4.png" class="img-responsive"></div>
+                                <div class="banImg35 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="1.8s"><img src="images/banDev5.png" class="hidden-xs img-responsive"><img src="images/banDev5m.png" class="visible-xs img-responsive"></div>
+                                <div class="banImg36 ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="3.8s"><img src="images/banDev6.png" class="img-responsive"></div>
+                            </div>
+                        </div>
+                    </div>
+                	<div class="swiper-slide">
+                    	<div class="banImg"><div class="imgBg"><img src="images/banner02.jpg"></div></div>
+                        <div class="banText2">
+                        	<div class="banTextCn2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><img src="images/banTextCn2.png" class="img-responsive"></div>
+                        	<div class="banTextEn2 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"><img src="images/banTextEn2.png" class="img-responsive"></div>
+                            <div class="banTextCir ani" swiper-animate-effect="rotateIn" swiper-animate-duration="2s" swiper-animate-delay="1.3s"></div>
+                            <div class="banLine2"></div>
+                        </div>
+                    </div>
+                	<div class="swiper-slide">
+                    	<div class="banImg"><div class="imgBg"><img src="images/banner01.jpg"></div></div>
+                        <div class="banText">
+                        	<div class="banTextCn ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><img src="images/banTextCn1.png" class="img-responsive"></div>
+                            <div class="ban1Line ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s"></div>
+                        	<div class="banTextEn ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"><img src="images/banTextEn1.png" class="img-responsive"></div>
+                            <div class="banBorder1">
+                            	<span class="ban1Line1"><i class="ani" swiper-animate-effect="H100" swiper-animate-duration="0.3s" swiper-animate-delay="1.3s"></i></span>
+                                <span class="ban1Line2"><i class="ani" swiper-animate-effect="W100" swiper-animate-duration="0.4s" swiper-animate-delay="1.6s"></i></span>
+                                <span class="ban1Line3"><i class="ani" swiper-animate-effect="H100" swiper-animate-duration="0.5s" swiper-animate-delay="2s"></i></span>
+                                <span class="ban1Line4"><i class="ani" swiper-animate-effect="W100" swiper-animate-duration="0.4s" swiper-animate-delay="2.5s"></i></span>
+                                <span class="ban1Line5"><i class="ani" swiper-animate-effect="H100" swiper-animate-duration="0.3s" swiper-animate-delay="2.9s"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="swiper-pagination"></span>
+            </div>
+            <a href="#page2" class="welcome">
+            	<span class="welcomeDot"></span>
+                <strong>WELCOME</strong>
+                <span class="welcomeLine"></span>
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </div>
+    </div>
+    <div class="section mbox2Bg">
+    	<div class="mbox mbox2">
+			<div class="box2ImgBg"><div class="imgBg"><img src="images/box2Bg.jpg"></div></div> 
+            <div class="mbox2Text">
+                <h3 class="mbox2TitEn">Who are We</h3>
+                <h3 class="mbox2TitCn">我们是谁</h3>
+                <div class="mbox2Brief">
+                    <p>杭州鼎风建筑有限公司</p>
+                    <p>成立于2025年7月</p>
+                    <p>专注与装配式建筑连接节点的研发设计与一体化服务，</p>
+                    <p>我们希望用技术保护建筑，守护家园</p>
+                </div>
+                <ul class="mbox2Num list-unstyled list-inline">
+                	<li class="text-center">
+                    	<span class="mbox2NumSp counter">200人</span>
+                        <p>预计带动</p>
+                    </li>
+                	<li class="text-center">
+                    	<span class="mbox2NumSp counter">90%以上</span>
+                        <p>专业对口率</p>
+                    </li>
+                	<li class="text-center">
+                    	<span class="mbox2NumSp counter">3000+人</span>
+                        <p>间接带动</p>
+                    </li>
+                	<li class="text-center">
+                    	<span class="mbox2NumSp counter">12+家</span>
+                        <p>合作企业</p>
+                    </li>
+                </ul>
+<!--                <ul class="mbox2Bot list-unstyled list-inline">-->
+<!--                	<li>-->
+<!--                    	<a href="javascript:;">-->
+<!--                        	<div class="mbox2Img"><img src="images/mbox2Img1.png" class="img-responsive"></div>-->
+<!--                            <h3 class="mbox2BotH3">出色的UI设计</h3>	-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                	<li>-->
+<!--                    	<a href="javascript:;">-->
+<!--                        	<div class="mbox2Img"><img src="images/mbox2Img2.png" class="img-responsive"></div>-->
+<!--                            <h3 class="mbox2BotH3">细致的用户体验</h3>	-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                	<li>-->
+<!--                    	<a href="javascript:;">-->
+<!--                        	<div class="mbox2Img"><img src="images/mbox2Img3.png" class="img-responsive"></div>-->
+<!--                            <h3 class="mbox2BotH3">超高的性价比</h3>	-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                	<li>-->
+<!--                    	<a href="javascript:;">-->
+<!--                        	<div class="mbox2Img"><img src="images/mbox2Img4.png" class="img-responsive"></div>-->
+<!--                            <h3 class="mbox2BotH3">贴心的售后服务</h3>	-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+                <div class="mbox2More text-center">
+                    <a href="#page3" class="welcome">
+                        <span class="welcomeDot"></span>
+                        <strong>WELCOME</strong>
+                        <span class="welcomeLine"></span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section mbox3Bg">   
+    	<div class="mbox mbox3">
+        	<div class="mbox3Lef">
+            	<div class="mbox3Tit">
+                    <h3 class="mbox2TitEn">Our services</h3>
+                    <h3 class="mbox2TitCn">我们的服务</h3>
+                    <div class="mbox3Brief">
+                        <p>国内领先构件定制服务商，对装配式建筑连接节点进行检测和输出决策方案服务。</p>
+                    </div>
+                </div>
+                <div class="mbox3LefCon">
+                	<ul class="mbox3LefItem list-unstyled">
+                    
+                 	  
+                    <li  class="active" >
+                        	<a href="javascript:void(0)" title="硬件自主研发">
+                            	<div class="mbox3Ico"><img src="images/mbox3Ico1.png" class="img-responsive"></div>
+                                <i class="mbox3Line"></i>
+                                <div class="mbox3Name">
+                                	<h3 class="mbox3H3">厂家采买代工生产</h3>
+                                    <p class="text-uppercase">Manufacturer Procurement & OEM Production</p>
+                                </div>
+                            </a>
+                        </li>
+               
+                    <li >
+                        	<a href="javascript:void(0)" title="系统自主开发">
+                            	<div class="mbox3Ico"><img src="images/mbox3Ico2.png" class="img-responsive"></div>
+                                <i class="mbox3Line"></i>
+                                <div class="mbox3Name">
+                                	<h3 class="mbox3H3">系统自主开发</h3>
+                                    <p class="text-uppercase">System development</p>
+                                </div>
+                            </a>
+                        </li>
+               
+                    <li >
+                        	<a href="javascript:void(0)" title="设备代加工">
+                            	<div class="mbox3Ico"><img src="images/mbox3Ico3.png" class="img-responsive"></div>
+                                <i class="mbox3Line"></i>
+                                <div class="mbox3Name">
+                                	<h3 class="mbox3H3">设备代加工</h3>
+                                    <p class="text-uppercase">Equipment processing</p>
+                                </div>
+                            </a>
+                        </li>
+               
+                    <li >
+                        	<a href="javascript:void(0)" title="方案配套方式">
+                            	<div class="mbox3Ico"><img src="images/mbox3Ico4.png" class="img-responsive"></div>
+                                <i class="mbox3Line"></i>
+                                <div class="mbox3Name">
+                                	<h3 class="mbox3H3">方案配套方式</h3>
+                                    <p class="text-uppercase">Matching method</p>
+                                </div>
+                            </a>
+                        </li>
+               
+                    <li >
+                        	<a href="javascript:void(0)" title="目标客户">
+                            	<div class="mbox3Ico"><img src="images/mbox3Ico5.png" class="img-responsive"></div>
+                                <i class="mbox3Line"></i>
+                                <div class="mbox3Name">
+                                	<h3 class="mbox3H3">目标客户</h3>
+                                    <p class="text-uppercase">Target customers</p>
+                                </div>
+                            </a>
+                        </li>
+               
+                    <li >
+                        	<a href="javascript:void(0)" title="计费方式">
+                            	<div class="mbox3Ico"><img src="images/mbox3Ico6.png" class="img-responsive"></div>
+                                <i class="mbox3Line"></i>
+                                <div class="mbox3Name">
+                                	<h3 class="mbox3H3">计费方式</h3>
+                                    <p class="text-uppercase">Billing method</p>
+                                </div>
+                            </a>
+                        </li>
+                
+       	   
+                      
+                    </ul>
+                </div>
+            </div>
+            <div class="mbox3Rig">
+            	<div class="box3RigImg"> 
+                    
+               	  
+                   <div class="box3RigImgItem  active "><img src="images/mbox3Img.jpg" class="img-responsive"><div class="clear"></div></div>
+               
+                   <div class="box3RigImgItem "><img src="images/20171220100318554.jpg" class="img-responsive"><div class="clear"></div></div>
+               
+                   <div class="box3RigImgItem "><img src="images/20171220100350474.jpg" class="img-responsive"><div class="clear"></div></div>
+               
+                   <div class="box3RigImgItem "><img src="images/mbox3Img2.jpg" class="img-responsive"><div class="clear"></div></div>
+               
+                   <div class="box3RigImgItem "><img src="images/20171220100350474.jpg" class="img-responsive"><div class="clear"></div></div>
+               
+                   <div class="box3RigImgItem "><img src="images/20171220100318554.jpg" class="img-responsive"><div class="clear"></div></div>
+                
+       	   
+                 
+                 
+                    <div class="clear"></div>
+                </div>
+                <div class="box3RigText">
+                	<div class="swiper-container">
+                    	<div class="swiper-wrapper">
+                        
+                  	  
+                    <div class="swiper-slide">
+                            	<h4 class="mbox3H4"><img src="images/mbox3IcoRed1.png" class="visible-sm">厂家采买代工生产</h4>
+                                <div class="mbox3Con">
+                                	<p>通过对招标对材料进行购买，通过三方不同工厂进行加工。最后由信任工厂进行组装，防止技术泄露</p>
+                                </div>
+                            </div>
+               
+                    <div class="swiper-slide">
+                            	<h4 class="mbox3H4"><img src="images/mbox3IcoRed2.png" class="visible-sm">系统自主开发</h4>
+                                <div class="mbox3Con">
+                                	<p>工程进度可视化处理，GIS系统开发，数据处理系统开发。</p>
+                                </div>
+                            </div>
+               
+                    <div class="swiper-slide">
+                            	<h4 class="mbox3H4"><img src="images/mbox3IcoRed3.png" class="visible-sm">设备代加工</h4>
+                                <div class="mbox3Con">
+                                	<p>机械设备行业领先制造商：GOLD KIRIN 彪麒 东运</p>
+                                </div>
+                            </div>
+               
+                    <div class="swiper-slide">
+                            	<h4 class="mbox3H4"><img src="images/mbox3IcoRed4.png" class="visible-sm">方案配套方式</h4>
+                                <div class="mbox3Con">
+                                	<p>1.每个城市标配5台检测设备和2名专业检修人员 2.给予多种决策方案供运营方选择</p>
+                                </div>
+                            </div>
+               
+                    <div class="swiper-slide">
+                            	<h4 class="mbox3H4"><img src="images/mbox3IcoRed5.png" class="visible-sm">目标客户</h4>
+                                <div class="mbox3Con">
+                                	<p>沿海建筑、村镇居民、大空间工业厂房</p>
+                                </div>
+                            </div>
+               
+                    <div class="swiper-slide">
+                            	<h4 class="mbox3H4"><img src="images/mbox3IcoRed6.png" class="visible-sm">计费方式</h4>
+                                <div class="mbox3Con">
+                                	<p>每公里收取2000元服务费</p>
+                                </div>
+                            </div>
+                
+       	   
+                        	
+                            
+                        </div>
+                        <div class="mbox3Btn">
+                            <span class="mbox3Prev"><i class="fa fa-angle-left"></i></span>
+                            <span class="mbox3Pause"><img src="images/pause.png"></span>
+                            <span class="mbox3Next"><i class="fa fa-angle-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="section mbox4Bg">
+    	<div class="mbox4LefBtn visible-sm visible-xs"><i class="fa fa-th-large"></i></div>
+    	<div class="mbox4Lef">
+        	<div class="mbox4LefCon">
+                <div class="mbox4Tit">
+                    <h3 class="mbox2TitEn">our products</h3>
+                    <h3 class="mbox2TitCn">我们的产品</h3>
+                    <div class="mbox3Brief">
+                        <p>精准测量，全保障。精准决策，零故障。</p>
+                    </div>
+                </div>
+<!--                <ul class="mbox4LefItem list-unstyled">-->
+<!--                -->
+<!--           -->
+<!--			  -->
+<!--				<li><a href="index.html#page4">集团公司<i class="mbox4LefLine"></i><i class="fa fa-angle-right"></i></a></li>-->
+<!--			 -->
+<!--				<li><a href="index.html#page4">科技金融<i class="mbox4LefLine"></i><i class="fa fa-angle-right"></i></a></li>-->
+<!--			 -->
+<!--				<li><a href="index.html#page4">传媒咨询<i class="mbox4LefLine"></i><i class="fa fa-angle-right"></i></a></li>-->
+<!--			 -->
+<!--				<li><a href="index.html#page4">教育培训<i class="mbox4LefLine"></i><i class="fa fa-angle-right"></i></a></li>-->
+<!--			 -->
+<!--				<li><a href="index.html#page4">其他行业<i class="mbox4LefLine"></i><i class="fa fa-angle-right"></i></a></li>-->
+<!--			 -->
+<!--         -->
+<!--                </ul>-->
+<!--                <a class="mbox4More" href="index.html#page4">查看全部案例<div class="mbox4MoreIco"></div></a>-->
+            </div>
+        </div>  
+    	<div class="mbox mbox4">
+			<div class="mbox4List">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                    
+                    
+                   	  
+                        <div class="swiper-slide">
+                            <a class="mbox4Link" title="第一代测量设备">
+                                <div class="mbox4Img imgBg">
+                                    <img src="images/20181029095546268.jpg" title="第一代测量设备" class="img-responsive">
+                                </div>
+                                <div class="mbox4Text">
+                                    <h3 class="ellipsis">产品侧面</h3>
+                                </div>
+                            </a>
+                        </div>
+                 
+                        <div class="swiper-slide">
+                            <a class="mbox4Link" title="第二代测量设备">
+                                <div class="mbox4Img imgBg">
+                                    <img src="images/20181029094807188.jpg" title="上海天一众合城市规划设计院有限公司" class="img-responsive">
+                                </div>
+                                <div class="mbox4Text">
+                                    <h3 class="ellipsis">产品正面</h3>
+                                </div>
+                            </a>
+                        </div>
+                 
+                        <div class="swiper-slide">
+                            <a class="mbox4Link" title="第三代测量机器人">
+                                <div class="mbox4Img imgBg">
+                                    <img src="images/20181026095320820.jpg" title="第三代测量机器人" class="img-responsive">
+                                </div>
+                                <div class="mbox4Text">
+                                    <h3 class="ellipsis">产品下面</h3>
+                                </div>
+                            </a>
+                        </div>
+                
+                    </div>
+                </div>
+                <span class="mbox4Btn mbox4Prev"><i class="fa fa-angle-left"></i></span>
+                <span class="mbox4Btn mbox4Next"><i class="fa fa-angle-right"></i></span>
+            </div>
+        </div>
+    </div>
+    <div class="section mbox5Bg">   
+    	<div class="mbox mbox5">
+            <div class="mbox5Tit">
+                <h3 class="mbox2TitEn">Our customers</h3>
+                <h3 class="mbox2TitCn">我们的客户</h3>
+            </div>
+        	<div class="mbox5List">
+            	<div class="swiper-container">
+                	<div class="swiper-wrapper">
+                    
+                  	  
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20180126041423558.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20180126041436160.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+               
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20180126042340423.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20180126042354881.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20171220090528701.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20171220090606130.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20180126041045864.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20180126041058556.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20180126042233744.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20180126042251497.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20180126042012388.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20180126042027151.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20180126041459631.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20180126041514821.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20180126042817598.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20180126042852308.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20180126042709352.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20180126042722855.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20180904044917498.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20180904044930224.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20180126042449890.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20180126042506389.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/mbox5Img2.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/mbox5Img2a.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20171220091753802.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20171220091817938.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20180126042558587.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20180126042648255.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+
+                    	<div class="swiper-slide">
+                        	<a class="mbox5Link" href="javascript:void(0)" >
+                            	<div class="mbox5Img"><img src="images/20180126041849105.png" class="img-responsive"></div>
+                                <div class="mbox5Mask"></div>
+                            	<div class="mbox5Hov"><img src="images/20180126041904202.png" class="img-responsive"></div>
+                            </a>
+                        </div>
+                
+       	   
+                    	 
+                         
+                    </div>
+                </div>
+                <div class="mbox5Bot">
+                	<span class="mbox5Btn mbox5Prev"><i class="fa fa-angle-left"></i><strong class="text-uppercase">prev</strong><i class="mbox5Line"></i></span>
+                	<span class="mbox5Btn mbox5Next"><i class="mbox5Line"></i><strong class="text-uppercase">next</strong><i class="fa fa-angle-right"></i></span>
+                    <span class="swiper-pagination"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section mbox7Bg">
+    	<div class="mbox mbox7">
+            <div class="mbox5Tit">
+                <h3 class="mbox2TitEn">DingFeng news</h3>
+                <h3 class="mbox2TitCn">鼎风资讯</h3>
+            </div>
+            <ul class="mbox7List list-unstyled">
+            	<li>
+                	<a title="天佑团队进入杭轨对接触线展开调研">
+                    	<div class="mbox7Img imgBg"><img src="images/20180918025534734.jpg" class="img-responsive"></div>
+                        <div class="mbox7Text">
+                        	<h3 class="mbox7Name">第一次调研时间</h3>
+                            <div class="mbox7Time"><i class="fa fa-clock-o"></i>00/00/0000</div>
+                            <div class="mbox7Brief">
+                            	<p>杭州鼎风建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="mbox7Ico"></div>
+                    </a>
+                </li>
+               
+         
+            	<li>
+                	<a title="天佑团队完成第一代接触线测量设备开发">
+                    	<div class="mbox7Img imgBg"><img src="images/20181219112830934.png" class="img-responsive"></div>
+                        <div class="mbox7Text">
+                        	<h3 class="mbox7Name">去干嘛了又？</h3>
+                            <div class="mbox7Time"><i class="fa fa-clock-o"></i>00/00/0000</div>
+                            <div class="mbox7Brief">
+                            	<p>杭州鼎风建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="mbox7Ico"></div>
+                    </a>
+                </li>
+               
+         
+            	<li>
+                	<a title="天佑团队第二代接触线测量设备实地测试">
+                    	<div class="mbox7Img imgBg"><img src="images/20190103054330982.jpg" class="img-responsive"></div>
+                        <div class="mbox7Text">
+                        	<h3 class="mbox7Name">又又去干嘛了？</h3>
+                            <div class="mbox7Time"><i class="fa fa-clock-o"></i>00/00/0000</div>
+                            <div class="mbox7Brief">
+                            	<p>杭州鼎峰建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="mbox7Ico"></div>
+                    </a>
+                </li>
+               
+         
+            	<li>
+                	<a  title="天佑团队完成第四代接触线测量设备开发">
+                    	<div class="mbox7Img imgBg"><img src="images/20190114020808710.jpg" class="img-responsive"></div>
+                        <div class="mbox7Text">
+                        	<h3 class="mbox7Name">号外号外</h3>
+                            <div class="mbox7Time"><i class="fa fa-clock-o"></i>00/00/0000</div>
+                            <div class="mbox7Brief">
+                            	<p>杭州鼎峰建筑有限公司</p>
+                            </div>
+                        </div>
+                        <div class="mbox7Ico"></div>
+                    </a>
+                </li>
+                
+       	   
+            	 
+            	 
+            	 
+            </ul>
+<!--            <a class="mbox4More mbox7More" href="index.html#page7" target="_blank">进一步，了解资讯<div class="mbox4MoreIco"></div></a>-->
+        </div>
+    </div>
+    <div class="section mbox8Bg">   
+    	<div class="mbox mbox8">
+        	<div class="mbox8Wrap">
+            	<div class="mbox8Left">
+                	<h2 class="mbox8LefEn">CONTACT US</h2>
+                    <h3 class="mbox8LefCn">我们期待 您的来信</h3>
+                    <form method="post" action="?m=formguide&c=index&a=show&formid=12&siteid=1" name="myform" id="myform">
+                    <ul class="mbox8Mes list-unstyled">
+                    	<li><input type="text" name="info[f1]" placeholder="您的姓名"></li>
+                    	<li><input type="text" name="info[f2]"  placeholder="您的电话"></li>
+                    	<li><textarea name="info[f3]" placeholder="留言给我们"></textarea></li>
+                        <li><input type="submit" class="mbox8MesBtn" value="提交给我们" name="dosubmit" id="dosubmit"></li>
+                    </ul>
+                    </form>
+                </div>
+            	<div class="mbox8Right">
+                	<h2 class="mbox8RigEn">How to find us?</h2>
+                    <h3 class="mbox8RigCn">您可以通过以下方式找到我们</h3>
+                    <p class="mbox8RigTip">若您有合作意向或者有相关问题，请您使用以下方式联系我们！</p>
+                    <ul class="mbox8RigCon list-unstyled list-inline">
+                    	<li>
+                        	<div class="mbox8RigIco"><img src="images/mbox8RigIco1.png" class="img-responsive"></div>
+                        	<p>杭州鼎峰建筑有限公司</p>
+                        </li>
+                    	<li>
+                        	<div class="mbox8RigIco"><img src="images/mbox8RigIco2.png" class="img-responsive"></div>
+                            <p>135 8671 1160</p>
+
+                        </li>
+                    	<li>
+                        	<div class="mbox8RigIco"><img src="images/mbox8RigIco3.png" class="img-responsive"></div>
+                            <p>YongCheng@163.com</p>
+                        </li>
+                    </ul>
+                    <ul class="mbox8RigBot list-unstyled list-inline">
+                    	<li>
+                        	<a href="tencent://message/?uin=1581432563" target="_blank" rel="nofollow"><i class="fa fa-qq"></i></a>
+                        </li>
+                    	<li>
+                        	<a href="tencent://message/?uin=1581432563" target="_blank" rel="nofollow"><i class="fa fa-weixin"></i></a>
+                            <div class="mbox8Wx"><img src="images/wechat.jpg" class="img-responsive"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section footerBg fp-auto-height">
+    	<div class="mbox footer">
+        	<div class="footCon">
+                <div class="copyright text-left">
+                    <p>
+                    
+              
+                						 <a href="index.html#page8">联系我们</a><span>|</span>
+                        © Copyright 2025 Design By <a href="#">杭州鼎峰建筑有限公司</a>
+<!--                    					 <a href="index.html#?m=content&c=index&a=lists&catid=14">法律声明</a><span>|</span>-->
+<!--                    					 <a href="index.html#?m=content&c=index&a=lists&catid=15">隐私政策</a><span>|</span>
+                            		 
+     
+                    © Copyright 2025 Design By <a href="#">杭州鼎风建筑有限公司</a>
+<!--                        <a href="index.xml">XML</a></p>-->
+<!--                    <p>友情链接： -->
+<!--                                            	<a href="index.html" target="_blank">网站建设</a> -->
+<!--                        	<a href="http://www.logo.vip" target="_blank">系统自主开发</a>-->
+<!--                        	<a href="http://www.huifachina.com" target="_blank">SEO</a> -->
+<!--                        	<a href="http://www.szzghl.cn" target="_blank">深圳网站建设</a> -->
+<!--                        	<a href="index.html#page4" target="_blank">建网站</a>-->
+<!--                        	<a href="http://www.rackspacechina.com" target="_blank">厦门网站开发</a> -->
+<!--                        	<a href="http://www.netconst.cn" target="_blank">上海网站建设</a> -->
+<!--                        	<a href="index.html" target="_blank">网站设计</a> -->
+<!--                        	<a href="http://www.quanmeicm.net/" target="_blank">成都网站建设</a> -->
+<!--                        	<a href="http://www.cnjunnet.com/" target="_blank">硬件自主研发</a>-->
+<!--                        </p>-->
+                </div>
+                <div class="FtLogo"><img src="images/footLogo.png" class="img-responsive"></div>
+            </div>        </div>
+	</div><!--footer-->
+</div><!--homepage-->
+<ul id="navPage" class="list-unstyled">
+    <li class="active" data-menuanchor="page1"><a href="#page1"><i>H</i><span>OME</span></a></li>
+    <li data-menuanchor="page2"><a href="#page2"><i>A</i><span>BOUT</span></a></li>
+    <li data-menuanchor="page3"><a href="#page3"><i>S</i><span>ERVICE</span></a></li>
+    <li data-menuanchor="page4"><a href="#page4"><i>P</i><span>RODUCTS</span></a></li>
+    <li data-menuanchor="page5"><a href="#page5"><i>C</i><span>USTOMER</span></a></li>
+    <li data-menuanchor="page6"><a href="#page6"><i>N</i><span>EWS</span></a></li>
+    <li data-menuanchor="page7"><a href="#page7"><i>C</i><span>ONTACT</span></a></li>
+</ul><!--navPage-->
+<script src="js/jquery.parallaxmouse.min.js"></script>
+<script>
+	$(window).parallaxmouse({
+		//invert: true,
+		//range: 400,
+		elms: [
+			{el: $('.ban3Ico1'), rate: 0.1},
+			{el: $('.ban3Ico2'), rate: 0.3},
+			{el: $('.ban3Ico3'), rate: 0.5},
+		]
+	});
+</script>
+</body>
+</html>
